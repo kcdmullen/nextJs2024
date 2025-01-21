@@ -34,6 +34,8 @@ export default function Page() {
         <div className='flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12'>
           {/* Add Hero Images Here */}
           {/* classNames hidden, md:block hide image on small screens, display block on md+ */}
+          {/* set inage size to the w and h of the actual image, not the desired display size */}
+          {/* Setting image size helps avoid layout shift when images load late */}
           <Image
             src='/hero-desktop.png'
             width={1000}
